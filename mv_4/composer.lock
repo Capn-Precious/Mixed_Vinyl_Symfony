@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2147332999173883423916e50da5caba",
+    "content-hash": "c92e2fb8c59071670aabe6af85cdd978",
     "packages": [
         {
             "name": "monolog/monolog",
