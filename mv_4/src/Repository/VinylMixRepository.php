@@ -14,7 +14,7 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method VinylMix[]    findAll()
  * @method VinylMix[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class MixRepository extends ServiceEntityRepository
+class VinylMixRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
