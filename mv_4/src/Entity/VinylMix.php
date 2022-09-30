@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\MixRepository;
+use App\Repository\VinylMixRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: MixRepository::class)]
+#[ORM\Entity(repositoryClass: VinylMixRepository::class)]
 class VinylMix
 {
     #[ORM\Id]
