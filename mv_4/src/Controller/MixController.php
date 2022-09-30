@@ -16,7 +16,8 @@ class MixController extends AbstractController
         $mix = new VinylMix();
         $mix->setTitle('Who is Phil Collins?');
         $mix->setDescription('drummers turned singers');
-        $mix->setGenre('pop');
+        $genres = ['pop', 'rock'];
+        $mix->setGenre($genres[array_rand($genres)]);
         $mix->setTrackCount(rand(5, 30));
         $mix->setVotes(rand(-50, 50));
 
