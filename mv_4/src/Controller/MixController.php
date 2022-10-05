@@ -16,6 +16,7 @@ class MixController extends AbstractController
     #[Route('/mix/new', name: 'app_new')]
     public function new(EntityManagerInterface $entityManager): Response
     {
+
         $mix = new VinylMix();
         $mix->setTitle('Who is Phil Collins?');
         $mix->setDescription('drummers turned singers');
