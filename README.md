@@ -1,1 +1,1 @@
-# SymfonyCasts
+# SymfonyCast - Symfony 6
