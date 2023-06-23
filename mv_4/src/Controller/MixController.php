@@ -13,6 +13,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MixController extends AbstractController
 {
+    /**
+     * @throws \Exception
+     */
     #[Route('/mix/new', name: 'app_new')]
     public function new(EntityManagerInterface $entityManager): Response
     {
@@ -22,8 +25,8 @@ class MixController extends AbstractController
         $mix->setDescription('drummers turned singers');
         $genres = ['pop', 'rock'];
         $mix->setGenre($genres[array_rand($genres)]);
-        $mix->setTrackCount(rand(5, 30));
-        $mix->setVotes(rand(-50, 50));
+        $mix->setTrackCount(random_int(5, 30));
+        $mix->setVotes(random_int(-50, 50));
 
         $entityManager->persist($mix);
         $entityManager->flush();
@@ -36,7 +39,7 @@ class MixController extends AbstractController
     }
 
     #[Route('/mix/{slug}', name: 'app_mix_show')]
-    public function show(VinylMix $mix)
+    public function show(VinylMix $mix): Response
     {
         return $this->render('mix/show.html.twig', [
             'mix' => $mix

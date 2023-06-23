@@ -11,7 +11,9 @@
         "doctrine/doctrine-bundle": "^2.7",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.13",
+        "easycorp/easyadmin-bundle": "*",
         "knplabs/knp-time-bundle": "^1.19",
+        "laminas/laminas-code": "^4.11",
         "pagerfanta/doctrine-orm-adapter": "^3.6",
         "pagerfanta/twig": "^3.6",
         "sensio/framework-extra-bundle": "^6.2",
@@ -86,6 +88,8 @@
         }
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest"
+        ,
         "doctrine/doctrine-fixtures-bundle": "^3.4",
         "symfony/debug-bundle": "6.1.*",
         "symfony/maker-bundle": "^1.47",
